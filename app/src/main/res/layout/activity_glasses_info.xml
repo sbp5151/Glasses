@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_glasses_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.jld.glasses.activity.GlassesInfo"
+    >
+
+    <include
+        android:id="@+id/glasses_info_title_bar"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/glasses_info_title_bar"
+        android:orientation="vertical">
+
+        <!--设备名称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height">
+
+            <TextView
+                style="@style/GlassesInfo2"
+                android:text="@string/dev_name"/>
+
+            <TextView
+                android:id="@+id/tv_dev_name"
+                style="@style/GlassesInfo"
+                android:layout_width="150dp"/>
+
+            <LinearLayout
+                android:gravity="right|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_change_name"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_click"
+                    android:text="@string/change"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="1dp"/>
+        <!--设备SN-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height">
+
+            <TextView
+                style="@style/GlassesInfo2"
+                android:text="@string/dev_sn"/>
+
+            <TextView
+                android:id="@+id/tv_dev_sn"
+                style="@style/GlassesInfo"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="1dp"/>
+        <!--硬件版本-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height">
+
+            <TextView
+                style="@style/GlassesInfo2"
+                android:text="@string/dev_versions"
+                />
+
+            <TextView
+                android:id="@+id/tv_dev_versions"
+                style="@style/GlassesInfo"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="1dp"/>
+        <!--安卓版本-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height">
+
+            <TextView
+                style="@style/GlassesInfo2"
+                android:text="@string/android_versions"
+                />
+
+            <TextView
+                android:id="@+id/tv_android_versions"
+                style="@style/GlassesInfo"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="1dp"/>
+        <!--存储空间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height">
+
+            <TextView
+                style="@style/GlassesInfo2"
+                android:text="@string/storage_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_storage_size"
+                style="@style/GlassesInfo"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="1dp"/>
+        <!--剩余空间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height">
+
+            <TextView
+                style="@style/GlassesInfo2"
+                android:text="@string/storage_residue"
+                />
+
+            <TextView
+                android:id="@+id/tv_storage_residue"
+                style="@style/GlassesInfo"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="1dp"/>
+        <!--剩余电量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height">
+
+            <TextView
+                style="@style/GlassesInfo2"
+                android:text="@string/storage_electric"
+                />
+
+            <TextView
+                android:id="@+id/tv_storage_electric"
+                style="@style/GlassesInfo"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_connect_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/connect_dev"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        />
+</RelativeLayout>

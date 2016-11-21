@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:paddingLeft="20dp"
+                android:background="@drawable/click_color">
+
+    <ImageView
+        android:id="@+id/iv_main_item_dev_icon"
+        android:layout_width="40dp"
+        android:layout_height="@dimen/list_height"
+        android:layout_marginTop="6dp"
+        android:padding="5dp"
+        android:src="@mipmap/blutooth"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_toEndOf="@id/iv_main_item_dev_icon"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height">
+        <TextView
+            android:id="@+id/tv_main_dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="ggggg"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tv_pair_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:visibility="gone"
+            android:text="@string/pair_ing"
+            android:textColor="@color/textGrey"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_main_item_right"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_main_item_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:layout_toLeftOf="@id/iv_main_item_right"
+        android:gravity="center"
+        android:text="ggggg"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/textGrey"
+        android:textSize="16dp"/>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/LinearLayout"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_main_item_right"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@mipmap/right"/>-->
+    <!--</LinearLayout>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLine"/>
+</RelativeLayout>

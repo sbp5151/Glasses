@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_call"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center"
+    tools:context="com.jld.glasses.activity.CallActivity">
+
+
+    <include
+        android:id="@+id/call_title_bar"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/call_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/WifiSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/current_number"/>
+
+        <TextView
+            android:id="@+id/tv_current_number"
+            style="@style/WifiSetting"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="150dp"
+        android:layout_below="@id/LinearLayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_call_setting"
+            android:background="@drawable/btn_click"
+            android:text="@string/setting"
+            android:layout_width="160dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_dev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/connect_dev"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <include
+        android:id="@+id/main_title_bar"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ListView
+        android:id="@+id/lv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_code"-->
+    <!--android:layout_width="230dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="230dp"-->
+    <!--android:background="@drawable/btn_click"-->
+    <!--android:text="@string/my_code"-->
+    <!--android:textSize="20dp"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_last"-->
+    <!--android:layout_width="230dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_below="@id/btn_code"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:background="@drawable/btn_click"-->
+    <!--android:text="@string/last_connect"-->
+    <!--android:textSize="20dp"-->
+    <!--/>-->
+</LinearLayout>
